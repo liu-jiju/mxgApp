@@ -1,5 +1,5 @@
 <template>
- <view class="banner-box"
+ <view @click="gonavigate()" class="banner-box"
     :style="`background-image: linear-gradient(to bottom, ${headerBackground}, ${headerBackground}, #fff);`">
  
     <swiper class="banner-swiper" indicator-active-color="#fff" indicator-color="#ffffff55"
@@ -32,10 +32,17 @@ export default {
    // 进行赋值
    data.navData = res.data;
   });
+  //跳转
+  const gonavigate=()=>{
+    uni.navigateTo({
+      url:"/pages/xiang/xiang"
+    })
+  }
   // 返回data
   return {
    ...toRefs(data),
    changeSwiper,
+   gonavigate
   };
  }
 };

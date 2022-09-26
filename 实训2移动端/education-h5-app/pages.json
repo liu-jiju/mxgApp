@@ -32,6 +32,11 @@
       "style": {
         "navigationStyle": "custom"
       }
+    }, {
+      "path": "pages/xiang/xiang",
+      "style": {
+        "navigationStyle": "custom"
+      }
     }
   ],
   "globalStyle": {
