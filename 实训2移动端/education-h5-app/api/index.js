@@ -18,7 +18,50 @@ const getRecommend = async () => { //请求热门推荐
   })
   return data
 }
+const getNew = async () => { //请求近期上新
+  let data = await api({
+    url:'/course/api/course/search',
+    method:'post'
+  })
+  return data
+}
+const getFree = async () => { //请求免费精选
+  let data = await api({
+    url:'/course/api/course/search',
+    method:'post'
+  })
+  return data
+}
+const getNice = async () => { //请求付费精品
+  let data = await api({
+    url:'/course/api/course/search',
+    method:'post'
+  })
+  return data
+}
+const getFence = async () => { //请求付费精品
+  let data = await api({
+    url:'/article/api/category/label/list',
+  })
+  return data
+}
+const getRead = async () => { //请求付费精品
+  let data = await api({
+    url:'/article/api/article/search',
+    method:'post'
+  })
+  return data
+}
+const getWenda = async () => { //请求付费精品
+  let data = await api({
+    url:'/question/api/question/hot',
+    method:'post'
+  })
+  return data
+}
+
 
 export{
-  getTitle,getSwiper,getRecommend
+  getTitle,getSwiper,getRecommend,getNew,getFree,
+  getNice,getFence,getRead,getWenda
 }

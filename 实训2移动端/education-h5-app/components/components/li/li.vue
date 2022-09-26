@@ -12,11 +12,12 @@
           {{item.title}}
         </view>
         <view class="name">
+          <img src="../../../static/images/yonghu.png" alt="">
           {{item.nickName}}
         </view>
         <view class="yuedu">
           <span class="jiage">{{item.priceDiscount}}</span>
-          <span class="zaixue">{{item.studyTotal}}</span>
+          <span class="zaixue"><img src="../../../static/images/bofang.png" alt="">{{item.studyTotal}}人在学</span>
         </view>
       </view>
     </li>
@@ -39,7 +40,7 @@
     width: 330px;
     height: 100px;
     // background-color: skyblue;
-    margin: 10rpx 30px;
+    margin: 10rpx 20px;
     float: left;
     .img-box{
       flex: 1;
@@ -73,6 +74,9 @@
         font-size: 13px;
         color: #999;
         margin-top: 20px;
+        img{
+          width: 12px;
+        }
       }
       .jiage{
         color: #fb6932;
@@ -80,6 +84,10 @@
       .zaixue{
         color: #222;
         margin-left: 10px;
+        font-size: 13px;
+        img{
+          width: 11px;
+        }
       }
     }
   }

@@ -3,27 +3,34 @@
     {
       "path": "pages/index/index",
       "style": {
-        "navigationStyle": "custom"
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true//设置参数为true
+        // "onReachBottomDistance": 20px//距离底部多远时触发
       }
     }, {
       "path": "pages/category/category",
       "style": {
-
+        "navigationStyle": "custom"
       }
     }, {
       "path": "pages/article/article",
       "style": {
-
+        "navigationStyle": "custom"
       }
     }, {
       "path": "pages/question/question",
       "style": {
-
+        "navigationStyle": "custom"
       }
     }, {
       "path": "pages/my/my",
       "style": {
-
+        "navigationStyle": "custom"
+      }
+    }, {
+      "path": "pages/sou/sou",
+      "style": {
+        "navigationStyle": "custom"
       }
     }
   ],
