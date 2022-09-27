@@ -2,7 +2,7 @@
 	<view class="body">
 		<view class="bottombox">
 		</view>
-		<view class="topbox">
+		<view class="topbox" @click="goLogin">
 			<view class="leftbox">
 				<image src="../../static/images/meng.jpg" mode=""></image>
 				<p class="textLogin"> 请登录</p>
@@ -43,6 +43,18 @@
 </template>
 
 <script>
+  export default {
+    setup() {
+      const goLogin=()=>{
+        uni.navigateTo({
+          url:'/pages/login/login'
+        })
+      }
+      return {
+        goLogin,
+      }
+    }
+  }
 </script>
 
 <style>

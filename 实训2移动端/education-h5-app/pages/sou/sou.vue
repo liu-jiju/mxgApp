@@ -1,6 +1,6 @@
 <template>
   <view class="top">
-    <view @click="goback()" class="fallback">
+    <view @click="goback" class="fallback">
       <uni-icons type="back" size="30"></uni-icons>
     </view>
     <img src="../../static/images/sousuo.png" alt="">
@@ -16,7 +16,7 @@
   <view class="remen" style="margin-top: 20px;">
     <view class="aaa">
       <view style="margin-bottom: 5px;">历史搜索</view>
-      <view class="kong">清空</view>
+      <view class="kong" @click='empty'>清空</view>
     </view>
     <view v-for="item,index in searchArr" :key="index" class='tab'>{{item.name}}</view>
   </view>
@@ -25,10 +25,18 @@
 <script>
   import {ref,reactive,toRefs} from 'vue'
   export default {
+    onLoad() {
+      uni.getStorage({
+          key: 'key',
+          success:  (res) =>{
+          this.searchArr=res.data
+          }
+      });
+    },
     setup() {
       const goback=()=>{
         uni.navigateBack({
-          
+          url:"/pages/index/index"
         })
       }
       const data = reactive({
@@ -63,17 +71,23 @@
           })
         }else{
           uni.navigateTo({
-          	// url:`/pages/searchxiang/searchxiang?user=${data.value}`
+          	url:`/pages/searchxiang/searchxiang?user=${data.value}`
           })
           data.searchArr.push({name:data.value})
           	uni.setStorage({
           		key:'key',
           		data:data.searchArr
-          	})
+            })
+            data.value=''
         }
       }
+      //清空事件
+      const	empty=()=>{
+      		 localStorage.removeItem('key')
+      		 data.searchArr=[]
+      }
       return {
-        goback,...toRefs(data),keydown
+        goback,...toRefs(data),keydown,empty
       }
     }
   }

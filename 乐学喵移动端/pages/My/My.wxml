@@ -1,0 +1,11 @@
+<!--pages/My/My.wxml-->
+<view class="box">
+  <view class="box1">
+    <image class="tu1" src="../img/user.png"></image>
+  </view>
+  <image class="tu2" src="../img/设置.png"></image>
+  <view class="tou">
+    <image class="tu3" src="../img/头像.png"></image>
+    <view class="login">登录/注册</view>
+  </view>
+</view>

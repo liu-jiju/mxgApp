@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="login">
+<view class="img-box">
+<image class="tu1" src="../img/1.png"></image>
+</view>
+
+</view>
