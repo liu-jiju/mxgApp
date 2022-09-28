@@ -1,7 +1,26 @@
 <!--index.wxml-->
-<view class="login">
 <view class="img-box">
-<image class="tu1" src="../img/1.png"></image>
+  <image class="tu1" src="../img/1.png"></image>
 </view>
-
+<view class="login">
+  <view class="item">
+    <image class="tu2" src="../img/手机.png"></image>
+    <input class="ipt" type="text" placeholder="请输入手机号"/>
+  </view>
+  <view class="item">
+    <image class="tu2" src="../img/密码.png"></image>
+    <input class="ipt" type="text" placeholder="请输入密码"/>
+  </view>
+  <view class="item">
+    <image class="tu2" src="../img/密码.png"></image>
+    <input class="ipt" type="text" placeholder="请输入验证码"/>
+    <view bindtap="yzm" class="yzm">
+      <image class="tu3" src="{{tupian}}"></image>
+    </view>
+  </view>
+  <button class="btn">登录</button>
+  <view class="box">
+    <view class="box-wj">忘记密码？</view>
+    <view class="box-zc">注册/验证码登录</view>
+  </view>
 </view>

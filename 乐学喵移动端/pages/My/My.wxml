@@ -2,10 +2,63 @@
 <view class="box">
   <view class="box1">
     <image class="tu1" src="../img/user.png"></image>
+    <view class="tou">
+      <image class="tu3" src="../img/头像.png"></image>
+      <view bindtap="login" class="login">登录/注册</view>
+    </view>
   </view>
   <image class="tu2" src="../img/设置.png"></image>
-  <view class="tou">
-    <image class="tu3" src="../img/头像.png"></image>
-    <view class="login">登录/注册</view>
+  <view class="box2">
+    <view class="dingdan">
+      <image class="tu4" src="../img/订单.png"></image>
+      <view class="ding">我的订单</view>
+      <view class="ding1">买课发快递</view>
+    </view>
+    <view class="kecheng">
+      <image class="tu4" src="../img/课程.png"></image>
+      <view class="ding">兑换课程</view>
+      <view class="ding1">兑换码兑换课程</view>
+    </view>
+    <view class="guanli">
+      <image class="tu4" src="../img/管理.png"></image>
+      <view class="ding">地址管理</view>
+      <view class="ding1">收货地址</view>
+    </view>
   </view>
+  <view class="item">
+      <view class="left">
+        <image style="margin: 0 10px;" class="tu5" src="../img/收藏.png"></image>
+        <view class="wode">我的收藏</view>
+      </view>
+      <van-icon name="arrow" />
+  </view>
+  <view class="item" style="border-bottom: 1px solid #e4e4e4;border-top: 1px solid #e4e4e4;">
+      <view class="left">
+        <image style="margin: 0 10px;" class="tu5" src="../img/会员.png"></image>
+        <view class="wode">我的会员</view>
+      </view>
+      <van-icon name="arrow" />
+  </view>
+  <view class="item" style="border-bottom: 10px solid #f7f7f7;">
+      <view class="left">
+        <image style="margin: 0 10px;" class="tu5" src="../img/优惠券.png"></image>
+        <view class="wode">我的优惠券</view>
+      </view>
+      <van-icon name="arrow" />
+  </view>
+  <view class="item" style="border-bottom: 1px solid #f7f7f7;">
+      <view class="left">
+        <image style="margin: 0 10px;" class="tu5" src="../img/消息.png"></image>
+        <view class="wode">我的消息</view>
+      </view>
+      <van-icon name="arrow" />
+  </view>
+  <view class="item">
+      <view class="left">
+        <image style="margin: 0 10px;" class="tu5" src="../img/反馈.png"></image>
+        <view class="wode">问题反馈</view>
+      </view>
+      <van-icon name="arrow" />
+  </view>
+  
 </view>

@@ -37,3 +37,42 @@
   color: white;
   text-align: center;
 }
+.box2{
+  width: 100%;
+  height: 75px;
+  background-color: white;
+  display: flex;
+  border-bottom: 10px solid #f7f7f7;
+}
+.dingdan,.kecheng,.guanli{
+  flex: 1;
+  text-align: center;
+  margin: 10px;
+  font-size: 25rpx;
+}
+.kecheng{
+  border-left: 2px solid #e4e4e4;
+  border-right: 2px solid #e4e4e4;
+  padding: 0px 20px;
+}
+.ding1{
+  color: #bebebe;
+}
+.tu4,.tu5{
+  width: 20px;
+  height: 20px;
+}
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 55px;
+}
+.left{
+  display: flex;
+  align-items: center;
+}
+page{
+  background-color: #f7f7f7;
+}

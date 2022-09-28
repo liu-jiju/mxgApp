@@ -1,51 +1,56 @@
 {
-  "pages":[
+  "pages": [
     "pages/My/My",
+    "pages/index/index",
     "pages/Course selection/Course selection",
     "pages/My class/My class",
     "pages/Meow house/Meow house",
     "pages/tool/tool",
-    "pages/index/index",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "乐学喵",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
       {
-      "pagePath": "pages/Course selection/Course selection",
-      "text": "选课",
-      "iconPath": "pages/img/选课.png",
-      "selectedIconPath": "pages/img/选课-active.png"
+        "pagePath": "pages/Course selection/Course selection",
+        "text": "选课",
+        "iconPath": "pages/img/选课.png",
+        "selectedIconPath": "pages/img/选课-active.png"
       },
       {
-      "pagePath": "pages/My class/My class",
-      "text": "我的课",
-      "iconPath": "pages/img/我的课.png",
-      "selectedIconPath": "pages/img/我的课-active.png"
+        "pagePath": "pages/My class/My class",
+        "text": "我的课",
+        "iconPath": "pages/img/我的课.png",
+        "selectedIconPath": "pages/img/我的课-active.png"
       },
       {
-      "pagePath": "pages/Meow house/Meow house",
-      "text": "喵屋",
-      "iconPath": "pages/img/喵屋.png",
-      "selectedIconPath": "pages/img/喵屋-active.png"
+        "pagePath": "pages/Meow house/Meow house",
+        "text": "喵屋",
+        "iconPath": "pages/img/喵屋.png",
+        "selectedIconPath": "pages/img/喵屋-active.png"
       },
       {
-      "pagePath": "pages/tool/tool",
-      "text": "工具",
-      "iconPath": "pages/img/工具.png",
-      "selectedIconPath": "pages/img/工具-active.png"
+        "pagePath": "pages/tool/tool",
+        "text": "工具",
+        "iconPath": "pages/img/工具.png",
+        "selectedIconPath": "pages/img/工具-active.png"
       },
       {
-      "pagePath": "pages/My/My",
-      "text": "我的",
-      "iconPath": "pages/img/我的.png",
-      "selectedIconPath": "pages/img/我的-active.png"
+        "pagePath": "pages/My/My",
+        "text": "我的",
+        "iconPath": "pages/img/我的.png",
+        "selectedIconPath": "pages/img/我的-active.png"
       }
     ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index"
   }
 }

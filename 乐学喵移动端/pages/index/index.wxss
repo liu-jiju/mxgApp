@@ -1,8 +1,75 @@
 /**index.wxss**/
+.img-box{
+  width: 100%;
+  height: 160px;
+  /* background-color: pink; */
+  position: relative;
+}
 .tu1{
-  width: 50px;
-  height: 50px;
+  width: 177px;
+  height: 55px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 }
 .login{
-  background-color: pink;
+  width: 100%;
+  height: 300px;
+  /* background-color: yellow; */
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.item{
+  width: 100%;
+  height: 50px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.tu2{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.ipt{
+  flex: 1;
+  height: 50px;
+  /* background-color: white; */
+  border-bottom: 1px solid #f9f9f9;
+}
+.yzm{
+  width: 80px;
+  height: 24px;
+  /* background-color: red; */
+  position: absolute;
+  top: 13px;
+  right: 10px;
+}
+.tu3{
+  width: 100%;
+  height: 100%;
+}
+.btn{
+  width: 100%;
+  height: 45px;
+  background-color: #f15a24;
+  color: white;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+.box{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.box-wj{
+  color: gray;
+}
+.box-zc{
+  color: #f59b00;
 }
