@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-input": "../../uni_modules/vk-uview-ui/components/u-input/u-input"
+  }
+}

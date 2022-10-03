@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "优购首页",
+  "navigationBarBackgroundColor": "#EB4450",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "u-swiper": "../../uni_modules/vk-uview-ui/components/u-swiper/u-swiper",
+    "u-image": "../../uni_modules/vk-uview-ui/components/u-image/u-image",
+    "u-grid-item": "../../uni_modules/vk-uview-ui/components/u-grid-item/u-grid-item",
+    "u-grid": "../../uni_modules/vk-uview-ui/components/u-grid/u-grid",
+    "home-floder": "./components/HomeFloder",
+    "search-input": "../../components/searchInput/searchinput"
+  }
+}
