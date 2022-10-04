@@ -1,0 +1,38 @@
+<view>
+    <view class="personal">
+        <!-- 未登录 -->
+        <navigator wx:if="{{!data}}" url="/pages/passwordLogin/passwordLogin">
+            <view class="userIcon">
+                <image class="tou" src="../../utils/img/tou.png"></image>
+            </view>
+            <text class="log_reg">登录/注册</text>
+            <image src="../../utils/img/shezhi.png" class="setting"></image>
+        </navigator>
+        <!-- 已登录 -->
+        <navigator wx:else url="/pages/info/info">
+            <view class="userIcon">
+                <image class="tou" src="../../utils/img/tou.png"></image>
+            </view>
+            <text class="log_reg">{{data.user_nickname}}</text>
+            <image src="../../utils/img/shezhi.png" class="setting"></image>
+        </navigator>
+    </view>
+</view>
+<view class="col_mid">
+    <view class="myOrder" wx:for="{{list}}" wx:key="index">
+        <image src="{{item.img}}" class="imgs" />
+        <text class="title">{{item.title}}</text>
+        <text class="content">{{item.content}}</text>
+    </view>
+</view>
+<view class="list-box">
+    <view class="list" wx:for="{{lists}}" wx:key="index">
+        <view class="list-item" wx:for="{{item}}" wx:for-item="it" wx:for-index="i" wx:key="i">
+            <view class="left">
+                <image src="{{it.img}}" class="tupiao"></image>
+                <text>{{it.title}}</text>
+                <view class="you"></view>
+            </view>
+        </view>
+    </view>
+</view>
