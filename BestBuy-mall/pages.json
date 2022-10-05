@@ -29,17 +29,24 @@
         "enablePullDownRefresh": false
       }
 
+    }, {
+      "path": "pages/searchContent/searchContent",
+      "style": {
+        "navigationBarTitleText": "搜索中心",
+        "navigationBarBackgroundColor": "#EB4450",
+        "navigationBarTextStyle": "white"
+      }
+
+    }, {
+      "path": "pages/goodsDetails/goodsDetails",
+      "style": {
+        "navigationBarTitleText": "优购",
+        "navigationBarBackgroundColor": "#EB4450",
+        "navigationBarTextStyle": "white"
+      }
+
     }
-      ,{
-            "path" : "pages/searchContent/searchContent",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+  ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
@@ -50,8 +57,7 @@
     "autoscan": true
   },
   "tabBar": {
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "static/icons/home.png",

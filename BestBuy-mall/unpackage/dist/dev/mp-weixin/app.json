@@ -4,7 +4,8 @@
     "pages/cate/cate",
     "pages/car/car",
     "pages/mine/mine",
-    "pages/searchContent/searchContent"
+    "pages/searchContent/searchContent",
+    "pages/goodsDetails/goodsDetails"
   ],
   "window": {
     "navigationBarTextStyle": "black",

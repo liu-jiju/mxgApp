@@ -14,4 +14,9 @@ const getFlor = () => request('/home/floordata').then((res: TS.FlorData) => res,
 //请求分类
 const getCateList = () => request('/categories').then((res: TS.GoodsCateList) => res, err => err);
 
-export {getSwiper,getCate,getFlor,getCateList};
+//搜索的接口
+const getSearchInput = (value: string) => request(`/goods/qsearch?query=${value}`).then((res: TS.SearchRes) => res, err => err);
+
+//商品详情的接口
+const getGoodDetail = (id: number) => request(`/goods/detail?goods_id=${id}`).then((res: TS.GoodsDetail) => res, err => err);
+export {getSwiper,getCate,getFlor,getCateList,getSearchInput,getGoodDetail};

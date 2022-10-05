@@ -13,6 +13,20 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/searchContent/searchContent",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/goodsDetails/goodsDetails",
+          "query": "id=undefined",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

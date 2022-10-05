@@ -7,7 +7,7 @@
 // import { type } from "os"
 
 //公共的状态返回
-type Meta = { 
+type Meta = {
   msg: string,
   status: Code.SUCCESS;
 }
@@ -41,17 +41,17 @@ enum Code {
 type Catelist = Array<CateItem>
 
 //楼层
-type ProductList =  Array<{
-    name: string,
-    image_src: string,
-    image_width: string,
-    open_type: string,
-    navigator_url: string
-  }>
-  
+type ProductList = Array<{
+  name: string,
+  image_src: string,
+  image_width: string,
+  open_type: string,
+  navigator_url: string
+}>
+
 interface FloorTitle {
-    name: string,
-    image_src: string
+  name: string,
+  image_src: string
 }
 
 type MessageList = Array<{
@@ -81,5 +81,68 @@ interface GoodsCateList {
   meta: Meta,
   message: GoodsItem;
 }
+type GoodsList = Array<{
+  goods_id: number,
+  goods_name: string,
+}>
 
-export { SwiperRes,SwiperList,Catelist,Code,FlorData,MessageList,GoodsCateList };
+//搜索
+interface SearchRes {
+  meta: Meta;
+  message: GoodsList;
+}
+
+//详情message数据
+interface GoodsDetailMessage {
+  "goods_id": number,
+  "cat_id": number,
+  "goods_name": string,
+  "goods_price": number,
+  "goods_number": number,
+  "goods_weight": number,
+  "goods_introduce": string,
+  "goods_state": number,
+  "is_del": string,
+  "add_time": number,
+  "upd_time": number,
+  "delete_time": null,
+  "hot_mumber": number,
+  "is_promote": boolean,
+  "cat_one_id": number,
+  "cat_two_id": number,
+  "cat_three_id": number,
+  "goods_cat": string,
+  "pics": [
+    {
+      "pics_id": number,
+      "goods_id": number,
+      "pics_big": string,
+      "pics_mid": string,
+      "pics_sma": string,
+      "pics_big_url": string,
+      "pics_mid_url": string,
+      "pics_sma_url": string
+    }
+  ],
+  "attrs": [
+    {
+      "goods_id": number,
+      "attr_id": number,
+      "attr_value": string,
+      "add_price": number,
+      "attr_name": string,
+      "attr_sel": string,
+      "attr_write": string,
+      "attr_vals": string
+    }
+  ]
+}
+
+
+//商品详情数据
+type GoodsDetail = {
+  meta: Meta;
+  message: GoodsDetailMessage;
+}
+
+export { SwiperRes, SwiperList, Catelist, Code, FlorData, MessageList, GoodsCateList, SearchRes, GoodsList, GoodsDetail };

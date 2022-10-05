@@ -23,23 +23,50 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.searchbg {
-  padding: 20rpx;
-  height: 100vh;
+.u-index-bar.data-v-aeb1c62a {
+  position: relative;
 }
-.searchbg .searchtop {
+.u-index-bar__sidebar.data-v-aeb1c62a {
+  position: fixed;
+  top: 50%;
+  right: 0;
+
   display: flex;
+  flex-direction: row;
+
+  flex-direction: column;
+  text-align: center;
+  transform: translateY(-50%);
+  -webkit-user-select: none;
+          user-select: none;
+  z-index: 99;
 }
-.searchbg .searchtop .closeBtn {
-  margin-right: 4rpx;
+.u-index-bar__index.data-v-aeb1c62a {
+  font-weight: 500;
+  padding: 8rpx 18rpx;
+  font-size: 22rpx;
+  line-height: 1;
 }
-.searchbg .goods_parent {
-  margin-top: 80rpx;
+.u-indexed-list-alert.data-v-aeb1c62a {
+  position: fixed;
+  width: 120rpx;
+  height: 120rpx;
+  right: 90rpx;
+  top: 50%;
+  margin-top: -60rpx;
+  border-radius: 24rpx;
+  font-size: 50rpx;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.65);
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  z-index: 9999999;
 }
-.searchbg .goods_parent .list-cell {
-  line-height: 80rpx;
-  border-bottom: 2rpx solid #aaa;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.u-indexed-list-alert text.data-v-aeb1c62a {
+  line-height: 50rpx;
 }
