@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "u-number-box": "../../uni_modules/vk-uview-ui/components/u-number-box/u-number-box"
+  }
 }

@@ -23,8 +23,42 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.uniGoodsNav {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+.u-numberbox.data-v-1823d8aa {
+  display: inline-flex;
+  align-items: center;
+}
+.u-number-input.data-v-1823d8aa {
+  position: relative;
+  text-align: center;
+  padding: 0;
+  margin: 0 6rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.u-icon-plus.data-v-1823d8aa,
+.u-icon-minus.data-v-1823d8aa {
+  width: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.u-icon-plus.data-v-1823d8aa {
+  border-radius: 0 8rpx 8rpx 0;
+}
+.u-icon-minus.data-v-1823d8aa {
+  border-radius: 8rpx 0 0 8rpx;
+}
+.u-icon-disabled.data-v-1823d8aa {
+  color: #c8c9cc !important;
+  background: #f7f8fa !important;
+}
+.u-input-disabled.data-v-1823d8aa {
+  color: #c8c9cc !important;
+  background-color: #f2f3f5 !important;
+}
+.num-btn.data-v-1823d8aa {
+  font-weight: 550;
+  position: relative;
+  top: 0rpx;
 }

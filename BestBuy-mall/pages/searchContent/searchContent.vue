@@ -8,7 +8,7 @@
       <view class="goods_parent">
         <!-- v-show="listNull" -->
         <view  v-for="item in searchList" :key="item.goods_id">
-          <view class="list-cell" @click="goDetail">
+          <view class="list-cell" @click="goDetail(item)">
             {{item.goods_name}}
           </view>
         </view>
@@ -50,6 +50,7 @@
       
       //跳转详情页面
       const goDetail = (values: {goods_id: number;goods_name:string}) =>{
+        
         uni.navigateTo({
           url:`/pages/goodsDetails/goodsDetails?id=${values.goods_id}`
         })
